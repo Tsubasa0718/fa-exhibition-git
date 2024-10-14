@@ -1,0 +1,14 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.p-contact{
+    padding: space-tp-clamp(184,300,375,1360) 0;
+    &__wrapper{
+        text-align: center;
+    }
+    &__btn:nth-child(1){
+        margin: px-to-rem(54px) 0 px-to-rem(24px) 0;
+        @include responsive("phone"){
+            margin-top: px-to-rem(72px);
+        }
+    }
+}

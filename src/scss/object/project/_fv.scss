@@ -1,0 +1,14 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.p-fv{
+  display: flex;
+  justify-content: center;
+  /* スクロールで画像を拡大させた際に、横スクロールが出ないよう設定 */
+  overflow-x: hidden;
+  img{
+    width: calc(100%/3);
+    height: 100vh;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+}

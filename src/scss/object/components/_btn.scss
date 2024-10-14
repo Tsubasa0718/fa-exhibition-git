@@ -1,0 +1,98 @@
+@use "../../foundation/_mixin.scss" as *;
+
+// menubtn
+.c-menubtn{
+ position: relative;
+ width: 50px;
+ height: 50px;
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: #fff;
+    transition: .3s all;
+    &:nth-child(1){
+       top: calc(50% - .5rem);
+    }
+    &:nth-child(2){
+       top: 50%;
+    }
+    &:nth-child(3){
+       top: calc(50% + .5rem);
+    }
+ }
+ &.active{
+    span{
+        &:nth-child(1) {
+          transform: translate(-50%, -50%) rotate(45deg);
+          top: 50%;
+         }
+         &:nth-child(2) {
+           opacity: 0;
+         }
+         &:nth-child(3) {
+           transform: translate(-50%, -50%) rotate(-45deg);
+            top: 50%;
+         }
+    }
+ }
+}
+
+// side-btn
+.c-sidebtn-box{
+      border: solid 1px #fff;
+      position: fixed;
+      right: -11%;
+      bottom: 200px;
+      transform: rotate(-90deg) translateY(200px); /* 初期状態で画面外に配置 */
+      transition: 0.6s;
+      z-index: 30;
+      @include responsive("desktop"){
+         transform: rotate(-90deg) translateY(400px);
+         right: -7%;
+      }
+  &.sidebtn--active{
+   transform: rotate(-90deg) translateY(0); /* アクティブ時に画面内にスライド */
+  }
+}
+.c-side-btn{
+  display: inline-block;
+  text-align: center;
+  padding: px-to-rem(15px) px-to-rem(20px);
+  border: 1px solid #fff;
+}
+
+// btn
+
+.c-btn{
+   position: relative;
+   display: inline-block;
+   text-align: center;
+   width: 458px;
+   padding: px-to-rem(30px) ;
+   border: 1px solid #fff;
+   transition: .3s;
+   @include responsive("phone"){
+      width: 100%;
+   }
+   &::after{
+      content: url(/dist/images/arow.png);
+      position: absolute;
+      right: -10%; /* 画像の位置調整 */
+      top: 50%;
+      transform: translateY(-50%);
+      width: 140px; /* 画像の幅を調整 */
+      height: auto;
+      transition: .3s;
+      @include responsive("phone"){
+         content: none;
+      }
+   }
+   &:hover::after{
+      right: -20%; /* 画像の位置調整 */
+   }
+}

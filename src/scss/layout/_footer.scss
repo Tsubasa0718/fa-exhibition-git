@@ -1,0 +1,40 @@
+@use "../foundation/_mixin.scss" as *;
+.l-footer{
+    padding: space-to-clamp(48,88,375,1360) 0;
+    &__logo{
+        margin-bottom: px-to-rem(20px);
+    }
+    &__address{
+      margin-bottom: px-to-rem(24px);
+    }
+    &__address,
+    &__info{
+        font-size: px-to-rem(12px);
+    }
+    &__wrapper{
+     margin-top: space-to-clamp(40,64,375,1360);
+     display: flex;
+     justify-content: space-between;
+     font-size: px-to-rem(12px);
+     @include responsive("phone"){
+        flex-direction: column;
+     }
+    }
+    &__sns{
+        a:not(:first-of-type){
+            margin-left: 1rem;
+        }
+    }
+    &__privacy{
+        margin-right: px-to-rem(20px);
+    }
+    &__link{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2rem;
+        transition: .3s;
+        a:hover{
+         text-decoration: underline 1px solid #fff;
+        }
+    }
+}

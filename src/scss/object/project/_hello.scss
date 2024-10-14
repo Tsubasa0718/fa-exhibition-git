@@ -1,0 +1,13 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.p-hello{
+    padding: space-to-clamp(40,136,375,1360) 0;
+    &__wrapper{
+        text-align: center;
+     }
+     &__title{
+        font-size: space-to-clamp(48,104,375,1360);
+        font-weight: 200;
+     }
+
+}

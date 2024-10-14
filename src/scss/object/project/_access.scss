@@ -1,0 +1,18 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.p-access{
+    padding: space-to-clamp(72,156,375,1360) 0;
+    &__wrapper{
+        text-align: center;
+    }
+    &__Place{
+     font-size: px-to-rem(28px);
+     margin-top: px-to-rem(72px);
+    }
+    &__info{
+     margin-top: px-to-rem(32px);
+    }
+    &__address{
+     margin-top: px-to-rem(24px);
+    }
+}

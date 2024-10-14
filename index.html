@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ようこそ、FA EXHIBITIONへ。ここでは、世界中から集められた美しい花々が一堂に会し、その魅力を存分に楽しむことができます。色とりどりの花々が織りなす幻想的な空間で、自然の美しさと癒しを感じてください。">
+    <!-- ogp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FA EXHIBITION">
+    <meta property="og:url" content="https://fa-exhibition-sample.netlify.app/">
+    <meta property="og:description" content="ようこそ、FA EXHIBITIONへ。ここでは、世界中から集められた美しい花々が一堂に会し、その魅力を存分に楽しむことができます。色とりどりの花々が織りなす幻想的な空間で、自然の美しさと癒しを感じてください。">
+    <meta property="og:image" content="https://fa-exhibition-sample.netlify.app/images/ogp.webp">
+    <!--Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>FA EXHIBITION</title>
+    <link rel="stylesheet" href="./src/scss/style.scss">
+    <!-- favicon -->
+     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrapper">
+          <h1 class="l-header__logo">
+            <a href="index.html">
+                <img src="./images/logo.svg" alt="FA EXHIBITIONのサイトロゴ">
+            </a>
+          </h1>
+          <button type="button" class="c-menubtn" id="js-menubtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="l-header__nav" id="js-nav">
+            <ul class="l-header__nav-list">
+                <li class="l-header__nav-item"><a class="l-header__nav-link" href="index.html">TOP</a></li>
+                <li class="l-header__nav-item"><a class="l-header__nav-link" href="#information">INFORMATION</a></li>
+                <li class="l-header__nav-item"><a class="l-header__nav-link" href="#gallery">GALLERY</a></li>
+                <li class="l-header__nav-item"><a class="l-header__nav-link" href="#access">ACCESS</a></li>
+                <li class="l-header__nav-item"><a class="l-header__nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <!-- fv -->
+          <div class="p-fv">
+            <img src="./images/mainimage-1.webp" alt="メインのお花の写真1">
+            <img src="./images/mainimage-2.webp" alt="メインのお花の写真2">
+            <img src="./images/mainimage-3.webp" alt="メインのお花の写真3">
+          </div>
+        <!-- hello -->
+        <section class="p-hello">
+            <div class="l-container">
+               <div class="p-hello__wrapper">
+                <h2 class="p-hello__title fadeEffect">
+                    Hello Flower! <br>
+                    FA EXHIBITION 2021
+                </h2>
+               </div>
+            </div>
+        </section>
+        <!-- information -->
+        <section id="information" class="p-information fadeEffect">
+            <div class="l-container">
+                <div class="p-information__wrapper">
+                    <h2 class="c-section-title">INFORMATION</h2>
+                <div class="p-information__info">
+                    <p class="p-information__date">2021 JUL 1(THU)-3(SAT)</p>
+                    <p class="p-information__time">DAY1 10am-6pm OTHER 10am-5:30pm</p>
+                </div>
+                <div class="p-information__place">at PARK SIDE HALL</div>
+                <div class="p-information__jatime">Day1 10時〜18時　その他 10時〜17時30分</div>
+                </div>
+            </div>
+
+        </section>
+        <!-- gallery-->
+        <section id="gallery" class="p-gallery">
+         <div class="l-container">
+             <div class="p-gallery__wrapper">
+                 <h2 class="c-section-title p-gallery__title fadeEffect">GALLERY</h2>
+                <div class="p-gallery__image-item fadeEffect">
+                    <figure class="p-gallery__image">
+                        <img src="./images/gallery-image1.webp" alt="ギャラリー写真1">
+                    </figure>
+                </div>
+                <div class="p-gallery__image-item fadeEffect">
+                    <figure class="p-gallery__image">
+                        <img src="./images/gallery-image2.webp" alt="ギャラリー写真2">
+                    </figure>
+                </div>
+                <div class="p-gallery__image-item fadeEffect">
+                    <figure class="p-gallery__image">
+                        <img src="./images/gallery-image3.webp" alt="ギャラリー写真3">
+                    </figure>
+                </div>
+                <div class="p-gallery__image-item fadeEffect">
+                    <figure class="p-gallery__image">
+                        <img src="./images/gallery-image4.webp" alt="ギャラリー写真4">
+                    </figure>
+                </div>
+                <div class="p-gallery__image-item fadeEffect">
+                    <figure class="p-gallery__image">
+                        <img src="./images/gallery-image5.webp" alt="ギャラリー写真5">
+                    </figure>
+                </div>
+                <div class="p-gallery__image-item fadeEffect">
+                    <figure class="p-gallery__image">
+                        <img src="./images/gallery-image6.webp" alt="ギャラリー写真6">
+                    </figure>
+                </div>
+            </div>
+         </div>
+        </section>
+        <!-- access -->
+        <section id="access" class="p-access">
+          <div class="l-container">
+           <div class="p-access__wrapper">
+            <h2 class="c-section-title">ACCESS</h2>
+            <div class="p-access__Place">at PARK SIDE HALL</div>
+            <div class="p-access__info">
+                <p>〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</p>
+                <p>PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo</p>
+            </div>
+            <div class="p-access__address">
+                <span>Tel: 03-1111-1111</span>
+                <address>E-mail: info@xxxxxxx.jp</address>
+            </div>
+           </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <section id="contact" class="p-contact">
+            <div class="l-container">
+              <div class="p-contact__wrapper">
+                <h2 class="c-section-title">CONTACT</h2>
+
+                <div class="p-contact__btn">
+                  <div class="p-contact__btn">
+                    <a href="#" class="c-btn">出展に関するお問い合わせ</a>
+                  </div>
+                  <div class="p-contact__btn">
+                    <a href="#" class="c-btn">その他にに関するお問い合わせ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <div class="l-bg"></div>
+     </main>
+     <!-- footer -->
+      <footer class="l-footer">
+        <div class="l-container">
+             <div class="l-footer__logo">
+                    <a href="#">
+                        <img src="./images/footer-logo.svg" alt=" FA EXHIBITIONのフッターのロゴ">
+                    </a>
+             </div>
+             <div class="l-footer__address">〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</div>
+              <div class="l-footer__info">
+                <span>Tel: 03-1111-1111</span>
+                <address>E-mail: info@xxxxxxx.jp</address>
+              </div>
+             <div class="l-footer__wrapper">
+                <div class="l-footer__sns">
+                    <a href="">Twitter</a>
+                    <a href="">facebook</a>
+                    <a href="">Instagram</a>
+                </div>
+                <div class="l-footer__copy">
+                    <a  class="l-footer__privacy" href="index.html">PRIVACY POLICY</a>
+                    <small class="l-footer__copy-righy">© FA EXHIBITION</small>
+                </div>
+             </div>
+             <div class="l-footer__link">
+                <a href="https://code-jump.com/">Cord jump</a>
+             </div>
+        </div>
+      </footer>
+      <div class="c-sidebtn-box l-pc-only">
+        <a href="#" class="c-side-btn">FOR VISITOR</a>
+        <a href="#" class="c-side-btn">FOR EXHIBITOR</a>
+    </div>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>

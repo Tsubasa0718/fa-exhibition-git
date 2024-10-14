@@ -1,0 +1,8 @@
+@use "../foundation/_mixin.scss" as *;
+
+.l-pc-only{
+    display: block;
+   @include responsive("phone"){
+    display: none;
+   }
+}

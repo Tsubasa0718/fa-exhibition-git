@@ -1,0 +1,30 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.p-gallery{
+    padding: space-to-clamp(40,136,375,1360) 0;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__title{
+     margin-bottom: space-to-clamp(88,104,375,1360);
+    }
+    &__image-item:not(:first-of-type){
+        margin-top: space-to-clamp(32,40,375,1360);
+    }
+    &__image-item:nth-child(odd){
+        margin-left: px-to-rem(300px);
+       @include responsive("phone"){
+        margin-left: 0;
+       }
+    }
+    &__image-item:nth-child(even){
+        margin-right: px-to-rem(300px);
+        @include responsive("phone"){
+            margin-right: 0;
+           }
+    }
+}

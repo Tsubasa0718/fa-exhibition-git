@@ -1,0 +1,24 @@
+@use "../../foundation/_mixin.scss" as *;
+
+.p-information{
+    &__wrapper{
+        text-align: center;
+    }
+    &__info{
+        margin-top: space-to-clamp(54,72,375,1360);
+    }
+    &__date{
+     font-size: space-to-clamp(16,24,375,1360);
+    }
+    &__time{
+      font-size: space-to-clamp(16,18,375,1360);
+    }
+    &__place{
+        margin-top: space-to-clamp(32,44,375,1360);
+        font-size: space-to-clamp(32,40,375,1360);
+    }
+    &__jatime{
+      margin-top: space-to-clamp(40,54,375,1360);
+    }
+
+}

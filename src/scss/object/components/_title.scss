@@ -1,0 +1,20 @@
+@use"../../foundation/_mixin.scss" as *;
+
+.c-section-title{
+    font-size: space-to-clamp(32,64,375,1360);
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    &::after{
+       content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffff;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+  }
+}
